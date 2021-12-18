@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Audio
+  - Checkpoint
+  - Trigger
+  - Warp
+  - AI
+  - SmashDownCollider
+  - AttackCollider
+  - Breakable
+  - Ground
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - AI
+  - Platforms
+  - OneWayPlatforms
+  - MovingPlatforms
+  - OneWayMovingPlatforms
+  - Stairs
+  - PhysicsVolume
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background 1
+    uniqueID: 1460385341
+    locked: 0
+  - name: Background 2
+    uniqueID: 3207253907
+    locked: 0
+  - name: Background 3
+    uniqueID: 4252360453
+    locked: 0
+  - name: Background 4
+    uniqueID: 2799934001
+    locked: 0
+  - name: Background 5
+    uniqueID: 921325333
+    locked: 0
+  - name: Background 6
+    uniqueID: 3498386129
+    locked: 0
+  - name: Player
+    uniqueID: 4035297995
+    locked: 0
+  - name: Foreground 1
+    uniqueID: 1277235765
+    locked: 0
+  - name: Foreground 2
+    uniqueID: 1585797637
+    locked: 0
+  - name: Foreground 3
+    uniqueID: 1956554611
+    locked: 0
+  - name: Foreground 4
+    uniqueID: 4188344115
+    locked: 0
+  - name: Foreground 5
+    uniqueID: 1404162989
+    locked: 0
+  - name: Foreground 6
+    uniqueID: 3424102147
+    locked: 0
+  - name: UI
+    uniqueID: 2021918763
+    locked: 0
