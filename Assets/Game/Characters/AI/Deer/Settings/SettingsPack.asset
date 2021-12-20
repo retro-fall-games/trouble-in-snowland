@@ -15,14 +15,14 @@ MonoBehaviour:
   AttackSpeed: 5
   DanglingRaycastOrigin: {x: 0.7, y: -0.25, z: 0}
   DanglingRaycastLength: 2
-  CanDangle: 1
+  CanDangle: 0
   DashDistance: 3
   DashForce: 40
   TotalDashes: 2
   MinInputThreshold: 0.1
   Cooldown: 1
   DashEffects: []
-  JumpHeight: 12
+  JumpHeight: 2
   OneWayPlatformFallVelocity: -10
   JumpThreshold: {x: 0.1, y: 0.4}
   OneWayPlatformsJumpCollisionOffDuration: 0.3
@@ -36,7 +36,7 @@ MonoBehaviour:
   CanJumpFlip: 0
   PauseEvent: {fileID: 0}
   UnPauseEvent: {fileID: 0}
-  RunningSpeed: 5
+  RunningSpeed: 1
   RunningPower: 5
   PowerGainPerFrame: 0.01
   CooldownTimer: 5
@@ -48,7 +48,7 @@ MonoBehaviour:
   StairsBelowDetectionRaycastOrigin: {x: -0.2, y: 0, z: 0}
   StairsBelowDetectionRaycastLength: 0.5
   StairsBelowLockTime: 0.2
-  WalkingSpeed: 5
+  WalkingSpeed: 1
   CrouchWalkingSpeed: 1
   WallClingingSlowFactor: 0.6
   RaycastVerticalOffset: 0

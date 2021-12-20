@@ -82,6 +82,10 @@ namespace RFG
 
     private void PerformKnockback(GameObject other)
     {
+      if (KnockbackData == null)
+      {
+        return;
+      }
       if (KnockbackData.LayerMask.Contains(other.layer) || (KnockbackData.Tags != null && other.CompareTags(KnockbackData.Tags)))
       {
         transform.SpawnFromPool(KnockbackData.Effects);

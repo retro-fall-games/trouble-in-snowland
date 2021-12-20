@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3304096202432696364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8bab52de805da047935d54b071d4a79, type: 3}
+  m_Name: RepeatNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 510c07bd0166b7d43ac508d51b6f2a6e
+  position: {x: -17, y: 79}
+  description: 
+  drawGizmos: 0
+  child: {fileID: -1424393234784938786}
+--- !u!114 &-1424393234784938786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9210e4a08ce704384373e1fa318ab4, type: 3}
+  m_Name: IdleActionNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: f7ee1047e99740b40bfc27ac170f04a2
+  position: {x: -17, y: 223}
+  description: 
+  drawGizmos: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cae963d1f21f1e4e86d44f3a7e9b7f8, type: 3}
+  m_Name: IdleBehaviourTree
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 3761463070356496804}
+  treeState: 0
+  nodes:
+  - {fileID: 3761463070356496804}
+  - {fileID: -3304096202432696364}
+  - {fileID: -1424393234784938786}
+  blackboard:
+    moveToPosition: {x: 0, y: 0}
+--- !u!114 &3761463070356496804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 163c147d123e4a945b688eddc64e3ea5, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 1b2209fdef56eab49acbb86fe2d779be
+  position: {x: -17, y: -57}
+  description: 
+  drawGizmos: 0
+  child: {fileID: -3304096202432696364}

@@ -164,14 +164,43 @@ namespace RFG
       // AddToPack<LandedState>("Landed", true, .25f, false, jumpingState, jumpingFlipState, doubleJumpState);
     }
 
-    public void GenerateAttackAbilityStates()
+    public void GenerateJumpState()
+    {
+      FallingState fallingState = AddToPack<FallingState>("Fall");
+      JumpingState jumpingState = AddToPack<JumpingState>("Jump", true, 0, false, fallingState);
+      AddToPack<LandedState>("Land", true, .25f, false, jumpingState);
+
+      // TODO - figure out a way to add these ledgeGrab, etc... states back on the the jumping states
+      // JumpingState jumpingState = AddToPack<JumpingState>("Jumping", true, 0, false, ledgeGrabState, primaryAttackStartedState, secondaryAttackStartedState, fallingState, smashDownStartedState, dashingState, ladderClimbingState);
+      // JumpingFlipState jumpingFlipState = AddToPack<JumpingFlipState>("JumpingFlip", true, 0, false, ledgeGrabState, primaryAttackStartedState, secondaryAttackStartedState, fallingState, smashDownStartedState, dashingState, ladderClimbingState);
+      // DoubleJumpState doubleJumpState = AddToPack<DoubleJumpState>("Jumping", true, 0, false);
+
+      // AddToPack<LandedState>("Landed", true, .25f, false, jumpingState, jumpingFlipState, doubleJumpState);
+    }
+
+    public void GenerateRunState()
+    {
+      AddToPack<RunningState>("Running");
+    }
+
+    public void GeneratePrimaryAttackState()
     {
       PrimaryAttackStartedState primaryAttackStartedState = AddToPack<PrimaryAttackStartedState>();
       AddToPack<PrimaryAttackPerformedState>("PrimaryAttackPerformed");
       AddToPack<PrimaryAttackCanceledState>();
+    }
+
+    public void GenerateSecondaryAttackState()
+    {
       SecondaryAttackStartedState secondaryAttackStartedState = AddToPack<SecondaryAttackStartedState>();
       AddToPack<SecondaryAttackPerformedState>("SecondaryAttackPerformed");
       AddToPack<SecondaryAttackCanceledState>();
+    }
+
+    public void GenerateAttackAbilityStates()
+    {
+      GeneratePrimaryAttackState();
+      GenerateSecondaryAttackState();
     }
 #endif
   }
