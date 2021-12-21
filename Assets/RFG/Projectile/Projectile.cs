@@ -9,9 +9,11 @@ namespace RFG
   {
     [field: SerializeField] private float Speed { get; set; } = 5f;
     [field: SerializeField] private float Damage { get; set; } = 10f;
+    [field: SerializeField] private string SpawnAtName { get; set; }
     [field: SerializeField] private Vector3 SpawnOffset { get; set; }
     [field: SerializeField] private Transform Target { get; set; }
     [field: SerializeField] private string TargetTag { get; set; }
+
     [field: SerializeField] private LayerMask LayerMask { get; set; }
 
     [field: SerializeField] private string[] SpawnEffects { get; set; }
@@ -45,6 +47,15 @@ namespace RFG
       else
       {
         CalculateVelocity(transform.right);
+      }
+      if (!string.IsNullOrEmpty(SpawnAtName))
+      {
+        GameObject spawnAtName = GameObject.Find(SpawnAtName);
+        if (spawnAtName != null)
+        {
+          transform.position = spawnAtName.transform.position;
+          transform.rotation = spawnAtName.transform.rotation;
+        }
       }
       transform.position += SpawnOffset;
       transform.SpawnFromPool(SpawnEffects, Quaternion.identity);

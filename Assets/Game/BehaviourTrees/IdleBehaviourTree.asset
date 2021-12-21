@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-3304096202432696364
+--- !u!114 &-1455655655050374308
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   started: 0
-  guid: 510c07bd0166b7d43ac508d51b6f2a6e
-  position: {x: -17, y: 79}
+  guid: 799048a92e2ad4e4a83015d6bbff3fc7
+  position: {x: 0, y: 132}
   description: 
   drawGizmos: 0
-  child: {fileID: -1424393234784938786}
---- !u!114 &-1424393234784938786
+  child: {fileID: -1087993961569048955}
+--- !u!114 &-1087993961569048955
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -33,10 +33,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   started: 0
-  guid: f7ee1047e99740b40bfc27ac170f04a2
-  position: {x: -17, y: 223}
+  guid: f59786dd4c43e2a4da9811dccfe5f362
+  position: {x: 0, y: 286}
   description: 
   drawGizmos: 0
+  MinIdleTime: 1
+  MaxIdleTime: 3
+  IdleWeight: 0.5
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49,15 +52,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cae963d1f21f1e4e86d44f3a7e9b7f8, type: 3}
   m_Name: IdleBehaviourTree
   m_EditorClassIdentifier: 
-  rootNode: {fileID: 3761463070356496804}
+  rootNode: {fileID: 8642755248097670071}
   treeState: 0
   nodes:
-  - {fileID: 3761463070356496804}
-  - {fileID: -3304096202432696364}
-  - {fileID: -1424393234784938786}
+  - {fileID: 8642755248097670071}
+  - {fileID: -1455655655050374308}
+  - {fileID: -1087993961569048955}
   blackboard:
     moveToPosition: {x: 0, y: 0}
---- !u!114 &3761463070356496804
+--- !u!114 &8642755248097670071
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -71,8 +74,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   started: 0
-  guid: 1b2209fdef56eab49acbb86fe2d779be
-  position: {x: -17, y: -57}
+  guid: f63fde31a2cf036469f016f8b4032238
+  position: {x: 0, y: 0}
   description: 
   drawGizmos: 0
-  child: {fileID: -3304096202432696364}
+  child: {fileID: -1455655655050374308}

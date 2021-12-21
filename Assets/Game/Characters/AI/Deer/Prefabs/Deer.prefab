@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5293783579648810943}
   - component: {fileID: 3593931442969744399}
   m_Layer: 0
-  m_Name: Nose
+  m_Name: DeerNose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,6 +82,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &7088331378473287153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7872805464389191123}
+  m_Layer: 0
+  m_Name: DeerLaserFirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7872805464389191123
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7088331378473287153}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.673, y: -0.076, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5974953295836631565}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7790968473943763833
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,9 +127,9 @@ GameObject:
   - component: {fileID: 6809286252259209957}
   - component: {fileID: 6579932099344717552}
   - component: {fileID: 5077080779569390432}
-  - component: {fileID: 1130041927546971084}
-  - component: {fileID: 7605219272445732707}
-  - component: {fileID: 6560352051164267023}
+  - component: {fileID: 6153699949319687666}
+  - component: {fileID: 2015409890885607145}
+  - component: {fileID: 8693639279519102374}
   m_Layer: 15
   m_Name: Deer
   m_TagString: AI
@@ -119,6 +149,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5293783579648810943}
+  - {fileID: 7872805464389191123}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -297,7 +328,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1130041927546971084
+--- !u!114 &6153699949319687666
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -313,7 +344,7 @@ MonoBehaviour:
   StunCooldownTime: 5
   PrimaryWeapon: {fileID: 0}
   SecondaryWeapon: {fileID: 0}
---- !u!114 &7605219272445732707
+--- !u!114 &2015409890885607145
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -325,8 +356,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58c6f9b140a52a14881ec09eaebb66eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tree: {fileID: 11400000, guid: a9751238dd6b71d4cb61f0bbf6b70ea8, type: 2}
---- !u!114 &6560352051164267023
+  tree: {fileID: 11400000, guid: da0bd8f407238a94fb406a53c5d6c238, type: 2}
+--- !u!114 &8693639279519102374
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
