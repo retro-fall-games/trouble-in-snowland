@@ -135,7 +135,6 @@ MonoBehaviour:
   rootNode: {fileID: -3848076189220602223}
   treeState: 0
   nodes:
-  - {fileID: 0}
   - {fileID: -3848076189220602223}
   - {fileID: -6130804367301922949}
   - {fileID: -5044864008182067198}

@@ -21,6 +21,9 @@ MonoBehaviour:
   FreezeState: 0
   WaitToUnfreezeTime: 0
   StatesCanUnfreeze: []
+  NextState: {fileID: 0}
+  NextStateAfterTime: 0
+  GoToNextStateAfterCompletion: 0
 --- !u!114 &-2756049127543645966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,6 +45,9 @@ MonoBehaviour:
   FreezeState: 0
   WaitToUnfreezeTime: 0
   StatesCanUnfreeze: []
+  NextState: {fileID: 0}
+  NextStateAfterTime: 0
+  GoToNextStateAfterCompletion: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,7 +69,7 @@ MonoBehaviour:
   - {fileID: 1828003279616662706}
   - {fileID: 3208109186519580862}
   - {fileID: -7529060592682793517}
-  DefaultState: {fileID: -2756049127543645966}
+  DefaultState: {fileID: 8056453252582197759}
 --- !u!114 &1828003279616662706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,6 +91,9 @@ MonoBehaviour:
   FreezeState: 0
   WaitToUnfreezeTime: 0
   StatesCanUnfreeze: []
+  NextState: {fileID: 0}
+  NextStateAfterTime: 0
+  GoToNextStateAfterCompletion: 0
 --- !u!114 &3138387025734724201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,6 +115,9 @@ MonoBehaviour:
   FreezeState: 0
   WaitToUnfreezeTime: 0
   StatesCanUnfreeze: []
+  NextState: {fileID: 0}
+  NextStateAfterTime: 0
+  GoToNextStateAfterCompletion: 0
 --- !u!114 &3208109186519580862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,6 +139,9 @@ MonoBehaviour:
   FreezeState: 0
   WaitToUnfreezeTime: 0
   StatesCanUnfreeze: []
+  NextState: {fileID: 0}
+  NextStateAfterTime: 0
+  GoToNextStateAfterCompletion: 0
 --- !u!114 &7749145739551492607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,6 +163,9 @@ MonoBehaviour:
   FreezeState: 0
   WaitToUnfreezeTime: 0
   StatesCanUnfreeze: []
+  NextState: {fileID: 0}
+  NextStateAfterTime: 0
+  GoToNextStateAfterCompletion: 0
 --- !u!114 &8056453252582197759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,6 +187,9 @@ MonoBehaviour:
   FreezeState: 0
   WaitToUnfreezeTime: 0
   StatesCanUnfreeze: []
+  NextState: {fileID: 0}
+  NextStateAfterTime: 0
+  GoToNextStateAfterCompletion: 0
 --- !u!114 &8420766320398715935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,3 +211,6 @@ MonoBehaviour:
   FreezeState: 0
   WaitToUnfreezeTime: 0
   StatesCanUnfreeze: []
+  NextState: {fileID: 0}
+  NextStateAfterTime: 0
+  GoToNextStateAfterCompletion: 0
