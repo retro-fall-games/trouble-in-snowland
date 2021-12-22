@@ -8,7 +8,7 @@ namespace RFG
   public class CharacterEditorWindow : Editor
   {
     public enum AddAbilityType { Select, AttackAbility }
-    public enum AddMovementStateType { Select, Jump, Run, PrimaryAttack, SecondaryAttack }
+    public enum AddMovementStateType { Select, Jump, Fall, Run, PrimaryAttack, SecondaryAttack }
     private VisualElement rootElement;
     private Editor editor;
     private AddAbilityType addAbilityType;
@@ -90,6 +90,9 @@ namespace RFG
       {
         case AddMovementStateType.Jump:
           character.MovementState.StatePack.GenerateJumpState();
+          break;
+        case AddMovementStateType.Fall:
+          character.MovementState.StatePack.GenerateFallState();
           break;
         case AddMovementStateType.Run:
           character.MovementState.StatePack.GenerateRunState();

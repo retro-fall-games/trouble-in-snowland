@@ -178,6 +178,11 @@ namespace RFG
       // AddToPack<LandedState>("Landed", true, .25f, false, jumpingState, jumpingFlipState, doubleJumpState);
     }
 
+    public void GenerateFallState()
+    {
+      FallingState fallingState = AddToPack<FallingState>("Fall");
+    }
+
     public void GenerateRunState()
     {
       AddToPack<RunningState>("Running");
